@@ -34,7 +34,7 @@ export function Footer() {
               <Twitter className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com/haru-y98"
+              href="https://github.com/HaruStudio98"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light-text/60 dark:text-dark-text/60 hover:text-brand transition-colors"

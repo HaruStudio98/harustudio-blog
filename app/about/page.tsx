@@ -3,7 +3,7 @@ import { Github, Twitter } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'HaruStudioについて。自作キーボード、ガジェット、デザインが好きなクリエイター。',
+  description: 'HaruStudioについて。自作キーボード、ガジェット、クリエイティブが好きなコンテンツディレクター。',
 }
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
         </div>
         <div>
           <h2 className="text-xl font-bold mb-1">HaruStudio</h2>
-          <p className="text-light-text/60 dark:text-dark-text/60 text-sm mb-3">コンテンツ制作ディレクター・デザイナー</p>
+          <p className="text-light-text/60 dark:text-dark-text/60 text-sm mb-3">コンテンツディレクター・デザイナー</p>
           <div className="flex gap-4">
             <a
               href="https://twitter.com/haru_y98"
@@ -27,10 +27,10 @@ export default function AboutPage() {
               className="flex items-center gap-1.5 text-sm text-light-text/60 dark:text-dark-text/60 hover:text-brand transition-colors"
             >
               <Twitter className="w-4 h-4" />
-              <span>Twitter</span>
+              <span>X (Twitter)</span>
             </a>
             <a
-              href="https://github.com/haru-y98"
+              href="https://github.com/HaruStudio98"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-sm text-light-text/60 dark:text-dark-text/60 hover:text-brand transition-colors"
@@ -44,13 +44,15 @@ export default function AboutPage() {
 
       <div className="prose-custom">
         <section className="mb-12">
-          <h2>はじめまして</h2>
+          <h2>HaruStudioとは</h2>
           <p>
-            HaruStudioとして、コンテンツ制作ディレクター・デザイナーとして活動しています。
-            最近は自作キーボードの沼にどっぷりハマっています。
+            自作キーボード、ガジェット、クリエイティブをテーマに活動しているブランドです。
+            コンテンツディレクターとして15年以上、Webやアプリのモノづくりに関わってきた経験をベースに、
+            好きなものを好きなように発信していく場所として立ち上げました。
           </p>
           <p>
-            このブログでは、自作キーボードやガジェット、デザイン、開発プロジェクトについて発信していきます。
+            UIという言葉がまだ一般的でなかった頃から、「使う人のことを考えたモノづくり」を続けてきました。
+            その視点は今もブログやプロダクト開発の根っこにあります。
           </p>
         </section>
 
@@ -58,44 +60,38 @@ export default function AboutPage() {
           <h2>やっていること</h2>
           <ul>
             <li>
-              <strong>自作キーボード</strong> - ビルドログ、レビュー、ファームウェア関連
+              <strong>自作キーボード</strong> — ビルドログ、パーツレビュー、ファームウェア関連の発信
             </li>
             <li>
-              <strong>ZMKファームウェア生成ツール開発</strong> - 初心者でも簡単に無線キーボードのファームウェアを作成できるツール
+              <strong>ガジェットレビュー</strong> — デスク環境、デバイス、ツールの紹介
             </li>
             <li>
-              <strong>ガジェットレビュー</strong> - デスク環境、デバイス、ツールの紹介
+              <strong>プロダクト開発</strong> — 自作キーボード向けツールをはじめ、実用的なWebアプリを開発中
             </li>
             <li>
-              <strong>デザイン・クリエイティブ</strong> - UI/UX、ロゴ制作など
+              <strong>クリエイティブコラム</strong> — UI/UXの話、AIとの協働、モノづくりの裏側
+            </li>
+            <li>
+              <strong>Vtuber活動</strong> — ガジェット・自作キーボードをテーマにした配信（準備中）
             </li>
           </ul>
         </section>
 
         <section className="mb-12">
-          <h2>開発中のプロジェクト</h2>
-          <h3>ZMKファームウェア生成ツール</h3>
+          <h2>AIとの向き合い方</h2>
           <p>
-            ZMKファームウェアの作成は初心者にとってハードルが高いです。
-            環境構築不要、GUIで簡単にファームウェアを生成できるツールを開発中です。
-            進捗はこのブログで共有していきます。
-          </p>
-        </section>
-
-        <section className="mb-12">
-          <h2>このブログについて</h2>
-          <p>
-            Next.js 14 + MDX + Tailwind CSS で構築しています。
-            「モダン × 温かみ」をコンセプトに、読みやすさとデザインにこだわりました。
+            このブログとプロダクトはClaude Codeと一緒に作っています。
+            AIをツールとして使うというより、知識を持ったメンバーとして一緒にやっていく感覚で取り組んでいます。
           </p>
           <p>
-            AI協働開発（Claude Code）を活用して作成しました。
-            技術的なことも今後記事にしていく予定です。
+            「知らないことを知っている相手にはリスペクトを持つ」というシンプルな考え方が、
+            自分とAIの関係の出発点にあります。その視点や体験も、このブログで発信していきたいテーマのひとつです。
           </p>
         </section>
 
         <section>
           <h2>Contact</h2>
+          <p>XやGitHubでつながりましょう。</p>
           <div className="flex gap-6 mt-4">
             <a
               href="https://twitter.com/haru_y98"
@@ -104,10 +100,10 @@ export default function AboutPage() {
               className="flex items-center gap-2 hover:text-brand transition-colors"
             >
               <Twitter className="w-5 h-5" />
-              <span>Twitter</span>
+              <span>X (Twitter)</span>
             </a>
             <a
-              href="https://github.com/haru-y98"
+              href="https://github.com/HaruStudio98"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-brand transition-colors"
