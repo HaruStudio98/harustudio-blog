@@ -13,8 +13,8 @@ export default function AboutPage() {
 
       {/* Profile card */}
       <div className="flex items-center gap-6 mb-12 p-6 rounded-xl bg-light-bg-secondary/50 dark:bg-dark-bg-secondary/50 border border-brand/10">
-        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center flex-shrink-0">
-          <span className="text-white font-bold text-2xl">HS</span>
+        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center flex-shrink-0 overflow-hidden">
+          <img src="/logo/harustudio-icon.svg" alt="HaruStudio" className="w-12 h-12" />
         </div>
         <div>
           <h2 className="text-xl font-bold mb-1">HaruStudio</h2>
