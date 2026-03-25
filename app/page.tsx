@@ -15,7 +15,6 @@ export default function Home() {
         <div className="w-16 h-1 bg-brand rounded-full mb-4" />
         <p className="text-base text-light-text/70 dark:text-dark-text/70 max-w-2xl">
           自作キーボード、ガジェット、クリエイティブについて発信しています。
-          ZMKファームウェア生成ツールの開発も進行中。
         </p>
       </section>
 
