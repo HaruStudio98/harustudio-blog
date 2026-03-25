@@ -1,9 +1,9 @@
 import { Metadata } from 'next'
-import { Github, Twitter, Mail } from 'lucide-react'
+import { Github, Twitter } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'HaruStudio（光春）について。自作キーボード、ガジェット、デザインが好きなクリエイター。',
+  description: 'HaruStudioについて。自作キーボード、ガジェット、デザインが好きなクリエイター。',
 }
 
 export default function AboutPage() {
@@ -11,11 +11,42 @@ export default function AboutPage() {
     <div className="max-w-[800px] mx-auto px-5 py-12">
       <h1 className="text-3xl md:text-4xl font-bold mb-8">About</h1>
 
+      {/* Profile card */}
+      <div className="flex items-center gap-6 mb-12 p-6 rounded-xl bg-light-bg-secondary/50 dark:bg-dark-bg-secondary/50 border border-brand/10">
+        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center flex-shrink-0">
+          <span className="text-white font-bold text-2xl">HS</span>
+        </div>
+        <div>
+          <h2 className="text-xl font-bold mb-1">HaruStudio</h2>
+          <p className="text-light-text/60 dark:text-dark-text/60 text-sm mb-3">コンテンツ制作ディレクター・デザイナー</p>
+          <div className="flex gap-4">
+            <a
+              href="https://twitter.com/haru_y98"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-sm text-light-text/60 dark:text-dark-text/60 hover:text-brand transition-colors"
+            >
+              <Twitter className="w-4 h-4" />
+              <span>Twitter</span>
+            </a>
+            <a
+              href="https://github.com/haru-y98"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-sm text-light-text/60 dark:text-dark-text/60 hover:text-brand transition-colors"
+            >
+              <Github className="w-4 h-4" />
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="prose-custom">
         <section className="mb-12">
           <h2>はじめまして</h2>
           <p>
-            HaruStudio（光春）です。コンテンツ制作ディレクター、デザイナーとして活動しています。
+            HaruStudioとして、コンテンツ制作ディレクター・デザイナーとして活動しています。
             最近は自作キーボードの沼にどっぷりハマっています。
           </p>
           <p>

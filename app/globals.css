@@ -13,6 +13,24 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
+  /* ダークモード：ブランドカラーのグロー＋ドットグリッド背景 */
+  .dark body {
+    background-color: #1c1c1e;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(217, 119, 6, 0.18) 0%, transparent 60%),
+      radial-gradient(circle, rgba(255,255,255,0.05) 2px, transparent 2px);
+    background-size: 100% 100%, 28px 28px;
+  }
+
+  /* ライトモード：ドットグリッド */
+  :root:not(.dark) body {
+    background-color: #fafafa;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(217, 119, 6, 0.10) 0%, transparent 60%),
+      radial-gradient(circle, rgba(0,0,0,0.07) 2px, transparent 2px);
+    background-size: 100% 100%, 28px 28px;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-sans font-semibold;
   }

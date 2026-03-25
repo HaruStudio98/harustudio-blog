@@ -39,8 +39,10 @@ export function getAllPosts(): PostMeta[] {
         excerpt: data.excerpt || '',
         tags: data.tags || [],
         coverImage: data.coverImage,
+        draft: data.draft || false,
       }
     })
+    .filter((post) => !post.draft)
 
   // 日付でソート（新しい順）
   return allPostsData.sort((a, b) => {
@@ -80,5 +82,11 @@ export function getAllPostSlugs(): string[] {
   const fileNames = fs.readdirSync(postsDirectory)
   return fileNames
     .filter((fileName) => fileName.endsWith('.mdx'))
+    .filter((fileName) => {
+      const fullPath = path.join(postsDirectory, fileName)
+      const fileContents = fs.readFileSync(fullPath, 'utf8')
+      const { data } = matter(fileContents)
+      return !data.draft
+    })
     .map((fileName) => fileName.replace(/\.mdx$/, ''))
 }

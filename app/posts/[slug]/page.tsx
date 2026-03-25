@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { getAllPostSlugs, getPostBySlug } from '@/lib/posts'
 import { Calendar, Tag, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
@@ -97,6 +98,13 @@ export default async function PostPage({ params }: PostPageProps) {
           )}
         </div>
       </header>
+
+      {/* Cover image */}
+      {post.coverImage && (
+        <div className="relative aspect-video rounded-xl overflow-hidden mb-10">
+          <Image src={post.coverImage} alt={post.title} fill className="object-cover" />
+        </div>
+      )}
 
       {/* Content */}
       <div className="prose-custom">

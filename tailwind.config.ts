@@ -16,8 +16,8 @@ const config: Config = {
           dark: '#B8690F',
         },
         dark: {
-          bg: '#1a1a1a',
-          'bg-secondary': '#2d2d2d',
+          bg: '#1c1c1e',
+          'bg-secondary': '#2c2c2e',
           text: '#e5e5e5',
           link: '#E8A36B',
           'link-hover': '#F5B885',

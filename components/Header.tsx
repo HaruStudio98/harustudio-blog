@@ -26,13 +26,13 @@ export function Header() {
                 width={160}
                 height={40}
                 priority
-                className="h-10 w-auto"
+                className="h-8 md:h-10 w-auto"
               />
             )}
-            {!mounted && <div className="h-10 w-40" />}
+            {!mounted && <div className="h-8 md:h-10 w-32 md:w-40" />}
           </Link>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3 md:gap-6">
             <Link
               href="/"
               className="text-sm font-medium hover:text-brand transition-colors"

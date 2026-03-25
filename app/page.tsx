@@ -5,13 +5,15 @@ export default function Home() {
   const posts = getAllPosts()
 
   return (
-    <div className="max-w-[1200px] mx-auto px-5 py-12">
+    <div className="max-w-[1200px] mx-auto px-5 py-12 relative">
       {/* Hero Section */}
-      <section className="mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <section className="mb-16 relative">
+        <p className="text-sm text-light-text/50 dark:text-dark-text/50 mb-2 font-medium tracking-wide">HaruStudio — コンテンツディレクター・デザイナー</p>
+        <h1 className="text-4xl md:text-5xl font-bold mb-3">
           HaruStudio Blog
         </h1>
-        <p className="text-lg text-light-text/70 dark:text-dark-text/70 max-w-2xl">
+        <div className="w-16 h-1 bg-brand rounded-full mb-4" />
+        <p className="text-base text-light-text/70 dark:text-dark-text/70 max-w-2xl">
           自作キーボード、ガジェット、クリエイティブについて発信しています。
           ZMKファームウェア生成ツールの開発も進行中。
         </p>
@@ -19,7 +21,12 @@ export default function Home() {
 
       {/* Posts Section */}
       <section>
-        <h2 className="text-2xl font-semibold mb-8">最新の記事</h2>
+        <h2 className="text-2xl font-semibold mb-8 flex items-center gap-3">
+          最新の記事
+          <span className="text-sm font-normal px-2.5 py-0.5 rounded-full bg-brand/10 text-brand">
+            {posts.length}
+          </span>
+        </h2>
 
         {posts.length === 0 ? (
           <p className="text-light-text/60 dark:text-dark-text/60">
