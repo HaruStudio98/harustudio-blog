@@ -21,7 +21,7 @@ export default function AboutPage() {
           <p className="text-light-text/60 dark:text-dark-text/60 text-sm mb-3">コンテンツディレクター・デザイナー</p>
           <div className="flex gap-4">
             <a
-              href="https://twitter.com/haru_y98"
+              href="https://x.com/harustudio98"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-sm text-light-text/60 dark:text-dark-text/60 hover:text-brand transition-colors"
@@ -94,7 +94,7 @@ export default function AboutPage() {
           <p>XやGitHubでつながりましょう。</p>
           <div className="flex gap-6 mt-4">
             <a
-              href="https://twitter.com/haru_y98"
+              href="https://x.com/harustudio98"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-brand transition-colors"

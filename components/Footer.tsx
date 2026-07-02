@@ -25,7 +25,7 @@ export function Footer() {
               About
             </Link>
             <a
-              href="https://twitter.com/haru_y98"
+              href="https://x.com/harustudio98"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light-text/60 dark:text-dark-text/60 hover:text-brand transition-colors"

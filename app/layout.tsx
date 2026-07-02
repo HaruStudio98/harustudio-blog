@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'HaruStudio Blog',
     description: '自作キーボード、ガジェット、クリエイティブについて発信するブログ',
-    creator: '@haru_y98',
+    creator: '@harustudio98',
   },
   icons: {
     icon: [
