@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Github, Twitter } from 'lucide-react'
+import { Github } from 'lucide-react'
+import { XIcon } from './XIcon'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -29,9 +30,9 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-light-text/60 dark:text-dark-text/60 hover:text-brand transition-colors"
-              aria-label="Twitter"
+              aria-label="X"
             >
-              <Twitter className="w-5 h-5" />
+              <XIcon className="w-5 h-5" />
             </a>
             <a
               href="https://github.com/HaruStudio98"

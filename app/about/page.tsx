@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
-import { Github, Twitter } from 'lucide-react'
+import { Github } from 'lucide-react'
+import { XIcon } from '@/components/XIcon'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -26,7 +27,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-sm text-light-text/60 dark:text-dark-text/60 hover:text-brand transition-colors"
             >
-              <Twitter className="w-4 h-4" />
+              <XIcon className="w-4 h-4" />
               <span>X (Twitter)</span>
             </a>
             <a
@@ -99,7 +100,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-brand transition-colors"
             >
-              <Twitter className="w-5 h-5" />
+              <XIcon className="w-5 h-5" />
               <span>X (Twitter)</span>
             </a>
             <a
